@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Code_Man",
+    "email": "hakerman@code.com",
+    "password": "password12345"
+  },
+  {
+    "name": "iamJSON",
+    "email": "iamjson@code.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Code_Wizard",
+    "email": "codewizard@me.com",
+    "password": "password12345"
+  }
+]

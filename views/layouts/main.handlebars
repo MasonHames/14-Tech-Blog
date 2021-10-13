@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>TechBlog</title>
+  </head>
+  <body>
+    <nav class="nav-extended">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"></a>
+        <ul class="right">
+          <li><a href="/" class="nav-link"><i
+                class="material-icons left"
+                id="home"
+              >home</i>home</a></li>
+          {{#if loggedIn}}
+            <li><a href="#" class="nav-link" id="logout-link"><i
+                  class="material-icons left"
+                  id="logout"
+                >lock_outline</i>logout</a></li>
+          {{else}}
+            <li><a href="/login" class="nav-link"><i
+                  class="material-icons left"
+                  id="login"
+                >vpn_key</i>login</a></li>
+          {{/if}}
+          {{#if loggedIn}}
+            <li><a href="/dashboard" class="nav-link"><i
+                  class="material-icons left"
+                  id="dashboard"
+                >person_outline</i>Your tech posts</a></li>
+          {{else}}
+            <li><a href="/dashboard" class="nav-link"><i
+                  class="material-icons left"
+                  id="dashboard"
+                >person_outline</i>Your tech posts</a></li>
+          {{/if}}
+        </ul>
+      </div>
+      <div class="nav-content center">
+        <span class="nav-title">TechBlog blog</span>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        {{{body}}}
+      </div>
+    </main>
+
+    {{#if loggedIn}}
+      <script src="/js/logout.js"></script>
+    {{/if}}
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    ></script>
+  </body>
+</html>
