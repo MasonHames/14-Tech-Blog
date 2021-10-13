@@ -11,8 +11,9 @@ const sequelize = require("./config/connection");
 const helpers = require("./utils/helpers");
 
 // Declaring variables for express server and port
-const app = express();
 const PORT = process.env.PORT || 3000;
+const app = express();
+
 
 // Session configuration with cookie timeout at 15minutes
 const sess = {
