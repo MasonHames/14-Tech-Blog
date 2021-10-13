@@ -8,6 +8,9 @@
     "start": "node server.js",
     "seed": "node seeds/seed"
   },
+  "engines": {
+    "node": "12.11.1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -20,6 +23,7 @@
     "express-session": "^1.17.1",
     "heroku": "^7.59.0",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "serve": "^12.0.1"
   }
 }
