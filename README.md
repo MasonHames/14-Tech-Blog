@@ -57,3 +57,6 @@ _If cloned down to your computer..._
 5. Seed your database in CLI using: `npm run seed`.
 6. Initialize the application in CLI using: `npm start`.
 7. Go to https://localhost:3001 to visit application
+
+_If not cloned please use this Heroku link..._
+https://salty-depths-52291.herokuapp.com/
