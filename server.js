@@ -12,7 +12,7 @@ const helpers = require("./utils/helpers");
 
 // Declaring variables for express server and port
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // Session configuration with cookie timeout at 15minutes
 const sess = {
@@ -47,5 +47,5 @@ app.use(routes);
 
 // Start sequelize database listening on port
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log("Now listening"));
+  app.listen(PORT, () => console.log(`App running on port ${PORT}!`));
 });
